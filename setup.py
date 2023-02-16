@@ -16,8 +16,8 @@ except FileNotFoundError:
 url_path = ''
 
 setup(name='financiallib',
-      version = '2.0.0',
-      license = f"Financial Services{url_path}",
+      version = '2.0.1',
+      license = f"Financial Services Ltd.{url_path}",
       author = "Neelakash Chatterjee",
       packages = find_packages(),
       install_requires = REQUIRES,

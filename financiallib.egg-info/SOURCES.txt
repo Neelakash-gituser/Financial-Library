@@ -2,6 +2,10 @@ LICENSE.txt
 README.md
 requirements.txt
 setup.py
+dist/financiallib-1.4.8-py3-none-any.whl
+dist/financiallib-1.4.8.tar.gz
+dist/financiallib-2.0.0-py3-none-any.whl
+dist/financiallib-2.0.0.tar.gz
 financiallib/__init__.py
 financiallib/chartpack.py
 financiallib/finstats.py

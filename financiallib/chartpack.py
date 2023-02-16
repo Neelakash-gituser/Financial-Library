@@ -401,9 +401,11 @@ class FinancialPlot():
 
 
         if self.display:
-            display(detailed_summary(self.detail_summary, sheets = ['Portfolio', 'Baseline'], prev_yr=self.pr, period = self.period, title=f'YearWise Summary | {self.strategy}'))
+            # Statistic
             display(data)
+            display(detailed_summary(self.detail_summary, sheets = ['Portfolio', 'Baseline'], prev_yr=self.pr, period = self.period, title=f'YearWise Summary | {self.strategy}'))
 
+            # Plots
             cum_ret_fig.show()
             max_drawdown_fig.show()
             rolling_beta_fig.show()
@@ -419,6 +421,7 @@ class FinancialPlot():
         if self.weights_flag:
             for tic in tickers:
                 wfig = self.weight_plot(tic, self.strategy)
+                wfig.show()
                 wfig.write_image(f'{self.optimization_path}/weight_{tic}_fig.png')
                 image_path.append(f'./{self.optimization_path}/weight_{tic}_fig.png')
 
