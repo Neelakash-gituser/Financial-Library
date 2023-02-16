@@ -5,3 +5,4 @@ from .new_optimizers import *
 from .utils import *
 from .statistical_tests import *
 from .finstats import *
+from .chartpack import *

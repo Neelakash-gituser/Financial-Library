@@ -13,13 +13,13 @@ except FileNotFoundError:
     print("'requirements.txt' not found!")
     REQUIRES = list()
 
-url_path = 'www.cloudcraftz.com'
+url_path = ''
 
-setup(name='cloudcraftz',
-      version = '1.4.7',
-      license = f"Cloudcraftz Solutions Pvt. Ltd. - {url_path}",
+setup(name='financiallib',
+      version = '2.0.0',
+      license = f"Financial Services{url_path}",
       author = "Neelakash Chatterjee",
       packages = find_packages(),
       install_requires = REQUIRES,
-      description = "Cloudcraftz: A Library for Financial Data Analysis and Pre-Processing.",
+      description = "Financial-Lib: A Library for Financial Data Analysis and Pre-Processing.",
       )
